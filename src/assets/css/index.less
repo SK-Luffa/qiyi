@@ -1,0 +1,141 @@
+@main: #5388E3;
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.el-card__body,
+p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul,
+li,
+a {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.el-card {
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.el-drawer__header {
+    padding: 0;
+    padding-top: 10px;
+
+}
+
+.el-drawer__body {
+    img {
+        position: fixed;
+        width: 60px;
+        display: block;
+        top: 10px;
+        left: 5px;
+    }
+
+    .el-menu-demo {
+        .el-menu-item {
+            height: 36px;
+            line-height: 36px;
+            text-align: left;
+        }
+    }
+}
+
+.el-carousel__container {
+    height: auto !important;
+}
+
+.index-parts>h1 {
+    height: 56px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 56px;
+    color: #19213d;
+    opacity: 1;
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+    background: #00a1f5;
+    opacity: 1;
+    color: #fff;
+    border: none;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+div {
+
+    /* 定义滚动条样式 */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background-color: rgba(240, 240, 240, 1);
+    }
+
+    /*定义滚动条轨道 内阴影+圆角*/
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);
+        border-radius: 10px;
+        background-color: rgba(240, 240, 240, .5);
+    }
+
+    /*定义滑块 内阴影+圆角*/
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);
+        background-color: rgba(240, 240, 240, .5);
+    }
+}
+
+.bottomCopyRight {
+    width: 420px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        height: 20px;
+        line-height: 20px;
+        p {
+            float: left;
+            height: 20px;
+            line-height: 20px;
+            margin: 0px 0px 0px 5px;
+            color: #939393;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bottomCopyRight {
+
+        width: 100%;
+        flex-wrap: wrap;
+
+        a {
+
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
